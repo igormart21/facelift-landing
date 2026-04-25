@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/faceyogi-v3.html"
+    }
+  ]
+}
