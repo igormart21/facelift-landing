@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facelift — Tu Mejor Rostro Natural</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '952649134041489');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=952649134041489&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#FF6B9D;
+  --pink2:#FF8FB1;
+  --peach:#FFB347;
+  --lavender:#C084FC;
+  --lav2:#A855F7;
+  --rose:#FF4D6D;
+  --soft:#FFF0F5;
+  --white:#FFFFFF;
+  --dark:#1A0A2E;
+  --mid:#4A3060;
+  --muted:#9B8AAE;
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;
+  --grad:linear-gradient(135deg,#FF6B9D 0%,#C084FC 50%,#FFB347 100%);
+  --grad2:linear-gradient(135deg,#FF8FB1 0%,#C084FC 100%);
+  --grad3:linear-gradient(180deg,#FFF0F5 0%,#F5E6FF 100%);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--white);color:var(--dark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 5vw;background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,107,157,0.12)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-size:22px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.03em}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--mid);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--pink)}
+.btn-nav{background:var(--grad);color:#fff;padding:11px 24px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 4px 20px rgba(255,107,157,.35);transition:all .2s;white-space:nowrap}
+.btn-nav:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,107,157,.45);-webkit-text-fill-color:#fff}
+
+/* ── HERO ── */
+.hero{min-height:100vh;padding-top:68px;background:var(--grad3);position:relative;overflow:hidden;display:flex;align-items:center}
+.hero-blob1{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,157,.18) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.hero-blob2{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.15) 0%,transparent 70%);bottom:-50px;left:-50px;pointer-events:none}
+.hero-inner{max-width:min(1400px,100%);margin:0 auto;padding:48px 4vw 60px;display:grid;grid-template-columns:minmax(0,0.82fr) minmax(0,1.38fr);gap:clamp(28px,4vw,56px);align-items:center;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,107,157,.1);border:1px solid rgba(255,107,157,.25);border-radius:100px;padding:7px 16px;font-size:12px;font-weight:700;color:var(--pink);letter-spacing:.06em;text-transform:uppercase;margin-bottom:24px}
+.hero-tag span{width:6px;height:6px;border-radius:50%;background:var(--pink);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1{font-size:clamp(40px,5.5vw,66px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:20px;color:var(--dark)}
+h1 .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-desc{font-size:17px;line-height:1.7;color:var(--mid);font-weight:300;max-width:460px;margin-bottom:36px}
+.hero-desc strong{font-weight:600;color:var(--dark)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+.btn-primary{background:var(--grad);color:#fff;padding:16px 32px;border-radius:100px;font-size:16px;font-weight:700;text-decoration:none;box-shadow:0 8px 32px rgba(255,107,157,.4);transition:all .25s;display:inline-block}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(255,107,157,.5)}
+.btn-outline{padding:16px 32px;border-radius:100px;font-size:16px;font-weight:600;text-decoration:none;border:2px solid rgba(192,132,252,.4);color:var(--lav2);transition:all .2s;display:inline-block}
+.btn-outline:hover{border-color:var(--lavender);background:rgba(192,132,252,.08)}
+.hero-social-proof{display:flex;align-items:center;gap:20px}
+.avatars{display:flex;align-items:center}
+.avatar{width:42px;height:42px;border-radius:50%;border:2px solid #fff;margin-left:-12px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(74,48,96,.22);transition:transform .2s ease,border-color .2s ease}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatars .avatar:first-child{margin-left:0}
+.avatars:hover .avatar{transform:translateY(-2px)}
+.avatar-more{background:var(--grad);color:#fff;font-size:11px;font-weight:800;letter-spacing:.02em}
+.proof-text{font-size:13px;color:var(--mid)}
+.proof-text strong{font-weight:700;color:var(--dark);display:block;font-size:15px}
+
+/* ── HERO — mockup do app (imagem) ── */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;min-width:0;width:100%}
+.hero-showcase{width:100%;max-width:min(1620px,calc(100vw - 8px));height:auto;display:block;border-radius:0;box-shadow:none}
+
+/* ── STATS BAR ── */
+.stats-bar{background:var(--dark);padding:28px 5vw}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.stat-cell{background:var(--dark);padding:28px 24px;text-align:center}
+.stat-num{font-size:40px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
+.stat-label{font-size:13px;color:rgba(255,255,255,.4);font-weight:500}
+
+/* ── PROBLEMA ── */
+.problem{padding:100px 5vw;background:#fff}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:14px}
+.section-h2{font-size:clamp(32px,3.8vw,50px);font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--dark);margin-bottom:16px}
+.section-h2 .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.section-sub{font-size:16px;color:var(--mid);line-height:1.7;max-width:520px;margin-bottom:60px;font-weight:300}
+.problem-showcase{margin:-20px 0 36px}
+.problem-showcase img{width:100%;height:auto;display:block}
+.problem-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prob-card{border-radius:24px;padding:32px;position:relative;overflow:hidden}
+.prob-card-1{background:linear-gradient(145deg,#FFF0F5,#FFE0EC)}
+.prob-card-2{background:linear-gradient(145deg,#F5F0FF,#EBE0FF)}
+.prob-card-3{background:linear-gradient(145deg,#FFF5F0,#FFE8D6)}
+.prob-emoji{font-size:36px;margin-bottom:20px;display:block}
+.prob-card h3{font-size:18px;font-weight:800;color:var(--dark);margin-bottom:10px;letter-spacing:-.02em}
+.prob-card p{font-size:14px;color:var(--mid);line-height:1.65;font-weight:300}
+
+/* ── COMO FUNCIONA ── */
+.how{padding:100px 5vw;background:var(--grad3)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:20px}
+.how-grid.how-grid-image{display:block}
+.how-showcase{width:100%;height:auto;display:block}
+.how-steps{display:flex;flex-direction:column;gap:0}
+.how-step{display:flex;gap:20px;padding:28px 0;border-bottom:1px solid rgba(192,132,252,.15);position:relative}
+.how-step:last-child{border-bottom:none}
+.step-num-badge{width:44px;height:44px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 6px 20px rgba(255,107,157,.3)}
+.how-step-text h3{font-size:17px;font-weight:800;color:var(--dark);margin-bottom:6px;letter-spacing:-.02em}
+.how-step-text p{font-size:14px;color:var(--mid);line-height:1.65;font-weight:300}
+.how-visual{position:relative}
+.how-phone-wrap{display:flex;justify-content:center;align-items:center;height:500px;position:relative}
+.how-phone{width:260px;border-radius:40px;background:#fff;box-shadow:0 40px 100px rgba(74,48,96,.2);overflow:hidden;border:8px solid #fff}
+.how-phone-screen{background:linear-gradient(180deg,#FFD6E7 0%,#E8C5FF 100%);height:420px;padding:24px 20px;display:flex;flex-direction:column;justify-content:flex-end;position:relative}
+.how-phone-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.how-face-icon{font-size:120px;opacity:.3}
+.how-phone-content{position:relative;z-index:2}
+.how-progress{background:rgba(255,255,255,.25);border-radius:20px;padding:16px;margin-bottom:14px;backdrop-filter:blur(10px)}
+.how-prog-label{font-size:10px;font-weight:700;color:#fff;opacity:.8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.how-prog-bars{display:flex;flex-direction:column;gap:6px}
+.how-prog-row{display:flex;align-items:center;gap:8px}
+.how-prog-name{font-size:10px;color:rgba(255,255,255,.8);width:70px;flex-shrink:0}
+.how-prog-track{flex:1;height:5px;background:rgba(255,255,255,.25);border-radius:3px;overflow:hidden}
+.how-prog-fill{height:100%;border-radius:3px;background:#fff}
+.how-prog-pct{font-size:10px;font-weight:700;color:#fff;width:26px;text-align:right}
+.how-phone-cta{background:rgba(26,10,46,.5);backdrop-filter:blur(10px);border-radius:16px;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+.how-phone-cta span{font-size:13px;font-weight:700;color:#fff}
+.how-phone-cta-btn{width:34px;height:34px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:14px}
+.floating-chip{position:absolute;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 8px 32px rgba(74,48,96,.15);display:flex;align-items:center;gap:10px;white-space:nowrap}
+.fc1{top:40px;right:-20px;animation:float 4s ease-in-out infinite}
+.fc2{bottom:80px;left:-30px;animation:float 4s ease-in-out infinite 2s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.chip-icon{width:32px;height:32px;border-radius:10px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:15px}
+.chip-text strong{display:block;font-size:12px;font-weight:700;color:var(--dark)}
+.chip-text span{font-size:11px;color:var(--muted)}
+
+/* ── RESULTADOS ── */
+.results{padding:100px 5vw;background:#fff}
+.results-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px;flex-wrap:wrap;gap:20px}
+.testimonials-marquee{display:flex;justify-content:center;gap:20px;max-height:740px;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,black 14%,black 86%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,black 14%,black 86%,transparent)}
+.test-col{flex:1;max-width:360px;min-width:0;overflow:hidden}
+.test-track{display:flex;flex-direction:column;gap:20px;animation:scroll-up linear infinite;will-change:transform}
+.test-col-1 .test-track{animation-duration:16s}
+.test-col-2 .test-track{animation-duration:20s}
+.test-col-3 .test-track{animation-duration:18s}
+@keyframes scroll-up{from{transform:translateY(0)}to{transform:translateY(calc(-50% - 10px))}}
+.test-card{border-radius:24px;padding:28px;border:1.5px solid rgba(255,107,157,.12);transition:border-color .2s,transform .2s;background:#fff}
+.test-card:hover{border-color:rgba(255,107,157,.4);transform:translateY(-4px);box-shadow:0 20px 60px rgba(255,107,157,.1)}
+.test-card.featured{background:linear-gradient(145deg,#FFF0F5,#F5EEFF);border-color:rgba(255,107,157,.3)}
+.test-stars{font-size:14px;letter-spacing:2px;color:var(--pink);margin-bottom:16px}
+.test-quote{font-size:15px;line-height:1.65;color:var(--dark);font-style:italic;margin-bottom:20px;font-weight:300}
+.test-author{display:flex;align-items:center;gap:12px}
+.test-av{width:40px;height:40px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;overflow:hidden}
+.test-av img{width:100%;height:100%;object-fit:cover;display:block}
+.test-name{font-size:14px;font-weight:700;color:var(--dark)}
+.test-info{font-size:12px;color:var(--muted)}
+.results-metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}
+.metric-pill{background:var(--soft);border-radius:16px;padding:20px 16px;text-align:center}
+.metric-pill .num{font-size:28px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px}
+.metric-pill .lbl{font-size:11px;color:var(--muted);font-weight:500;line-height:1.4}
+
+/* ── OFERTA ── */
+.offer{padding:100px 5vw;background:var(--grad3)}
+.offer-grid{display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:start;margin-top:60px}
+.offer-items{display:flex;flex-direction:column;gap:14px}
+.offer-item{background:#fff;border-radius:20px;padding:20px 24px;display:flex;align-items:flex-start;gap:16px;border:1.5px solid rgba(255,107,157,.1);transition:border-color .2s}
+.offer-item:hover{border-color:rgba(255,107,157,.3)}
+.offer-item-icon{width:46px;height:46px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;box-shadow:0 4px 16px rgba(255,107,157,.25)}
+.offer-item.bonus .offer-item-icon{background:linear-gradient(135deg,#C084FC,#FF6B9D)}
+.offer-item h4{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px;letter-spacing:-.01em}
+.offer-item p{font-size:13px;color:var(--muted);line-height:1.55;font-weight:300}
+.bonus-label{display:inline-block;background:linear-gradient(135deg,#C084FC,#FF6B9D);color:#fff;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:4px}
+
+/* ── PRICING BOX ── */
+.pricing-box{border-radius:28px;overflow:hidden;box-shadow:0 32px 80px rgba(255,107,157,.2);position:sticky;top:84px;border:1.5px solid rgba(255,107,157,.2)}
+.pricing-grad{background:var(--grad);padding:32px;text-align:center}
+.pricing-badge{display:inline-block;background:rgba(255,255,255,.2);color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:20px;border:1px solid rgba(255,255,255,.3)}
+.pricing-old-price{font-size:15px;color:rgba(255,255,255,.6);text-decoration:line-through;margin-bottom:6px}
+.pricing-big{display:flex;align-items:baseline;justify-content:center;gap:4px;margin-bottom:4px}
+.pricing-curr{font-size:24px;font-weight:700;color:#fff}
+.pricing-val{font-size:72px;font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em}
+.pricing-per{font-size:18px;color:rgba(255,255,255,.7);font-weight:300}
+.pricing-note{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:28px}
+.btn-pricing{display:block;background:#fff;color:var(--pink);padding:17px 24px;border-radius:100px;font-size:16px;font-weight:800;text-decoration:none;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.15);transition:all .2s;letter-spacing:-.01em}
+.btn-pricing:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,0,0,.2)}
+.pricing-lock{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:14px;font-size:12px;color:rgba(255,255,255,.6)}
+.pricing-white{background:#fff;padding:28px 32px}
+.included-title{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.inc-item{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--dark);margin-bottom:13px;font-weight:500}
+.inc-check{width:22px;height:22px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0}
+.anchor-box{background:var(--soft);border-radius:14px;padding:16px;margin-top:20px;text-align:center;border:1px dashed rgba(255,107,157,.3)}
+.anchor-box p{font-size:13px;color:var(--mid);line-height:1.5}
+.anchor-box strong{display:block;color:var(--dark);font-weight:700;font-size:14px;margin-bottom:3px}
+
+/* ── GARANTIA ── */
+.guarantee{padding:80px 5vw;background:#fff;text-align:center}
+.guarantee-inner{max-width:640px;margin:0 auto}
+.guarantee-ring{width:80px;height:80px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;box-shadow:0 12px 40px rgba(255,107,157,.35)}
+.guarantee-ring svg{width:36px;height:36px;display:block}
+.guarantee h2{font-size:clamp(28px,3.5vw,44px);font-weight:800;letter-spacing:-.03em;margin-bottom:16px}
+.guarantee h2 .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.guarantee p{font-size:16px;color:var(--mid);line-height:1.7;margin-bottom:36px;font-weight:300}
+.g-pills{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px}
+.g-pill{padding:10px 20px;border-radius:100px;font-size:13px;font-weight:600;background:var(--soft);color:var(--pink);border:1.5px solid rgba(255,107,157,.2)}
+
+/* ── FAQ ── */
+.faq{padding:80px 5vw;background:var(--grad3)}
+.faq-wrap{max-width:720px;margin:0 auto}
+.faq-header{text-align:center;margin-bottom:48px}
+details{background:#fff;border-radius:18px;margin-bottom:12px;overflow:hidden;border:1.5px solid rgba(192,132,252,.12);transition:border-color .2s}
+details[open]{border-color:rgba(255,107,157,.3)}
+summary{display:flex;justify-content:space-between;align-items:center;padding:22px 26px;cursor:pointer;font-size:15px;font-weight:700;color:var(--dark);list-style:none;gap:16px;user-select:none}
+summary::-webkit-details-marker{display:none}
+.faq-plus{width:28px;height:28px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--pink);font-size:18px;font-weight:300;flex-shrink:0;transition:all .2s;line-height:1}
+details[open] .faq-plus{background:var(--grad);color:#fff;transform:rotate(45deg)}
+.faq-body{padding:0 26px 22px;font-size:14px;line-height:1.75;color:var(--mid);font-weight:300}
+
+/* ── FINAL CTA ── */
+.final{padding:120px 5vw;background:var(--dark);text-align:center;position:relative;overflow:hidden}
+.final::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,107,157,.15) 0%,transparent 65%);pointer-events:none}
+.final::after{content:'';position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(192,132,252,.12) 0%,transparent 65%);pointer-events:none}
+.final-inner{position:relative;z-index:1}
+.final h2{font-size:clamp(36px,5.5vw,68px);font-weight:800;line-height:1.05;letter-spacing:-.04em;color:#fff;margin-bottom:20px}
+.final h2 .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.final p{font-size:17px;color:rgba(255,255,255,.4);max-width:500px;margin:0 auto 48px;line-height:1.65;font-weight:300}
+.final-btn{display:inline-block;background:var(--grad);color:#fff;padding:18px 44px;border-radius:100px;font-size:17px;font-weight:800;text-decoration:none;box-shadow:0 16px 60px rgba(255,107,157,.45);transition:all .25s;letter-spacing:-.01em}
+.final-btn:hover{transform:translateY(-4px);box-shadow:0 28px 80px rgba(255,107,157,.55)}
+.final-note{margin-top:20px;font-size:12px;color:rgba(255,255,255,.2);letter-spacing:.08em;text-transform:uppercase}
+
+/* ── FOOTER ── */
+footer{background:#0D0618;padding:24px 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-logo{font-size:18px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.footer-links{display:flex;gap:24px}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.25);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:rgba(255,255,255,.5)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-inner,.how-grid,.offer-grid{grid-template-columns:1fr}
+  .hero-visual{padding-top:8px}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .problem-cards{grid-template-columns:1fr}
+  .testimonials-marquee{max-height:680px;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,black 14%,black 86%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,black 14%,black 86%,transparent);display:grid;grid-template-columns:1fr}
+  .test-col{max-width:none}
+  .test-col-2,.test-col-3{display:none}
+  .test-col-1 .test-track{animation-duration:22s}
+  .results-metrics{grid-template-columns:repeat(3,1fr)}
+  .pricing-box{position:static}
+  .nav-links a:not(.btn-nav){display:none}
+  footer{flex-direction:column;text-align:center}
+}
+
+@media(max-width:760px){
+  nav{padding:0 16px}
+  .nav-inner{height:62px}
+  .logo{font-size:20px}
+  .btn-nav{padding:10px 14px;font-size:12px}
+
+  .hero{min-height:auto;padding-top:72px}
+  .hero-inner{padding:26px 16px 34px;gap:22px}
+  .hero-tag{font-size:10px;padding:6px 12px;margin-bottom:14px}
+  h1{font-size:clamp(32px,11vw,44px);line-height:1.08;margin-bottom:14px}
+  .hero-desc{font-size:15px;line-height:1.55;margin-bottom:22px}
+  .hero-btns{gap:10px;margin-bottom:22px}
+  .btn-primary,.btn-outline{width:100%;text-align:center;padding:14px 16px;font-size:15px}
+  .hero-social-proof{gap:12px;align-items:flex-start}
+  .avatar{width:34px;height:34px;margin-left:-9px}
+  .proof-text{font-size:12px;line-height:1.35}
+  .proof-text strong{font-size:14px}
+  .hero-showcase{max-width:100%}
+
+  .stats-bar{padding:20px 16px}
+  .stat-cell{padding:18px 12px}
+  .stat-num{font-size:30px}
+  .stat-label{font-size:11px}
+
+  .problem,.how,.results,.offer,.guarantee,.faq,.final{padding-left:16px;padding-right:16px}
+  .problem,.how,.results,.offer{padding-top:72px;padding-bottom:72px}
+  .section-h2{font-size:clamp(28px,9.5vw,38px)}
+  .section-sub{font-size:15px;line-height:1.6;margin-bottom:28px}
+  .prob-card{padding:24px}
+  .problem-showcase{margin:16px 0 10px}
+
+  .results-header{margin-bottom:26px}
+  .results-header > div:last-child{text-align:left !important}
+  .test-card{padding:20px;border-radius:18px}
+  .test-quote{font-size:14px;line-height:1.55}
+  .results-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+  .metric-pill{padding:14px 12px}
+  .metric-pill .num{font-size:22px}
+
+  .offer-grid{gap:22px;margin-top:30px}
+  .offer-item{padding:16px 16px;gap:12px;border-radius:16px}
+  .offer-item-icon{width:40px;height:40px;font-size:17px;border-radius:12px}
+  .pricing-grad{padding:24px 18px}
+  .pricing-white{padding:20px 18px}
+  .pricing-val{font-size:56px}
+  .pricing-curr{font-size:20px}
+  .pricing-per{font-size:16px}
+  .btn-pricing{padding:15px 16px;font-size:15px}
+
+  .guarantee-ring{width:72px;height:72px;margin-bottom:20px}
+  .guarantee-ring svg{width:32px;height:32px}
+  .g-pills{gap:8px}
+  .g-pill{width:100%;text-align:center}
+
+  .faq-wrap{max-width:100%}
+  summary{padding:18px 16px;font-size:14px}
+  .faq-body{padding:0 16px 18px;font-size:13px}
+
+  .final{padding-top:84px;padding-bottom:84px}
+  .final p{font-size:15px;margin-bottom:28px}
+  .final-btn{width:100%;max-width:440px;padding:16px 18px;font-size:16px}
+  .final-note{font-size:11px;line-height:1.5}
+
+  .footer-links{gap:14px;justify-content:center;flex-wrap:wrap}
+}
+
+@media(max-width:520px){
+  .btn-nav{padding:9px 12px;font-size:11px}
+  .hero-inner{padding-left:12px;padding-right:12px}
+  .problem,.how,.results,.offer,.guarantee,.faq,.final,.stats-bar{padding-left:12px;padding-right:12px}
+  .stats-inner{grid-template-columns:1fr}
+  .results-metrics{grid-template-columns:1fr}
+  .pricing-val{font-size:50px}
+  .pricing-big{gap:2px}
+  .anchor-box{padding:14px}
+  .avatar{width:32px;height:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Facelift</div>
+    <div class="nav-links">
+      <a href="#como">Cómo funciona</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#oferta">Planes</a>
+      <a href="https://pay.hotmart.com/R105544429D?checkoutMode=10" class="btn-nav">Garantía de 7 días</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><span></span>Método natural · Guiado por IA</div>
+      <h1>Consigue tu<br><span class="grad-text">Mejor Rostro</span><br>de forma natural.</h1>
+      <p class="hero-desc">Ejercicios faciales personalizados que <strong>reafirman, definen y rejuvenecen</strong> en menos de 10 minutos al día — sin agujas, sin cirugías.</p>
+      <div class="hero-btns">
+        <a href="https://pay.hotmart.com/R105544429D?checkoutMode=10" class="btn-primary">Comenzar con garantía de 7 días</a>
+        <a href="#como" class="btn-outline">Cómo funciona</a>
+      </div>
+      <div class="hero-social-proof">
+        <div class="avatars">
+          <div class="avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Usuaria 1"></div>
+          <div class="avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Usuaria 2"></div>
+          <div class="avatar"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Usuaria 3"></div>
+          <div class="avatar"><img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Usuaria 4"></div>
+          <div class="avatar avatar-more">+</div>
+        </div>
+        <div class="proof-text">
+          <strong>+180.000 mujeres</strong>
+          ya transformaron su piel ★★★★★
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-showcase" src="assets/ChatGPT%20Image%20Apr%2024%2C%202026%2C%2007_28_32%20PM.png?v=20260424-1954" width="1442" height="1091" alt="Facelift — pantallas de la app en iPhone" loading="eager" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-cell"><div class="stat-num">180k+</div><div class="stat-label">Usuarias activas</div></div>
+    <div class="stat-cell"><div class="stat-num">4.9★</div><div class="stat-label">Valoración media</div></div>
+    <div class="stat-cell"><div class="stat-num">14d</div><div class="stat-label">Para el 1.er resultado</div></div>
+    <div class="stat-cell"><div class="stat-num">89%</div><div class="stat-label">Tasa de satisfacción</div></div>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag">El problema</div>
+    <h2 class="section-h2">¿Reconoces<br>alguno de <span class="grad-text">estos signos?</span></h2>
+    <p class="section-sub">Procedimientos caros que duran poco y cremas que prometen milagros. Hay un camino mejor.</p>
+    <div class="problem-cards">
+      <div class="prob-card prob-card-1">
+        <span class="prob-emoji">🪞</span>
+        <h3>Flacidez y contorno perdido</h3>
+        <p>La musculatura facial se debilita con el tiempo. La gravedad hace el resto. Ninguna crema reconstruye músculo.</p>
+      </div>
+      <div class="prob-card prob-card-2">
+        <span class="prob-emoji">💉</span>
+        <h3>Procedimientos invasivos y costosos</h3>
+        <p>Botox, rellenos y láser cuestan una fortuna por sesión — y deben repetirse para siempre.</p>
+      </div>
+      <div class="prob-card prob-card-3">
+        <span class="prob-emoji">⏳</span>
+        <h3>Rutinas que nadie logra mantener</h3>
+        <p>Cualquier método que exija desplazamientos y horas del día termina abandonándose en pocas semanas.</p>
+      </div>
+    </div>
+    <div class="problem-showcase">
+      <img src="assets/c8042032-648d-4770-a59f-c17a50207867.png?v=20260424-1956" width="1536" height="1024" alt="Comparativa antes y después con beneficios del método Facelift" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="how" id="como">
+  <div class="section-inner">
+    <div class="section-tag">Cómo funciona</div>
+    <h2 class="section-h2">Simple, rápido y<br><span class="grad-text">completamente natural.</span></h2>
+    <div class="how-grid how-grid-image">
+      <img class="how-showcase" src="assets/4b714b49-5d29-4559-999d-4e8c16095809.png?v=20260424-2001" width="1536" height="1024" alt="Sección de cómo funciona con tres etapas del método Facelift" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="results" id="resultados">
+  <div class="section-inner">
+    <div class="results-header">
+      <div>
+        <div class="section-tag">Resultados reales</div>
+        <h2 class="section-h2" style="margin-bottom:0">Lo que nuestras<br><span class="grad-text">clientas dicen.</span></h2>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:40px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1">4.9 ★</div>
+        <div style="font-size:13px;color:var(--muted)">+12.400 valoraciones</div>
+      </div>
+    </div>
+    <div class="testimonials-marquee">
+      <div class="test-col test-col-1">
+        <div class="test-track">
+          <div class="test-card featured">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"En 3 semanas noté el contorno más definido. Varias personas me preguntaron si me había hecho algo. Solo seguí el plan diario de la app."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Carla M."></div>
+              <div><div class="test-name">Carla M., 43 años</div><div class="test-info">Usuaria desde hace 2 meses · São Paulo</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Siempre tuve miedo a las agujas. Facelift me dio firmeza de forma natural y sin procedimientos invasivos. Me veo más descansada y segura."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Renata A."></div>
+              <div><div class="test-name">Renata A., 48 años</div><div class="test-info">Usuaria desde hace 4 meses · Río de Janeiro</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Lo mejor fue ver cambios reales sin complicarme. En menos de un mes sentí mi rostro más tonificado y con mejor definición."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de Laura G."></div>
+              <div><div class="test-name">Laura G., 41 años</div><div class="test-info">Usuaria desde hace 5 meses · Ciudad de México</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Con solo 10 minutos al día, mi piel se ve más luminosa y el contorno más marcado. Es fácil de seguir y realmente funciona."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Foto de Mariana R."></div>
+              <div><div class="test-name">Mariana R., 36 años</div><div class="test-info">Usuaria desde hace 1 mes · Bogotá</div></div>
+            </div>
+          </div>
+          <div class="test-card featured">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Me encanta porque no necesito equipos ni citas. Lo hago en casa y ya noto menos líneas finas alrededor de ojos y boca."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Foto de Sofía P."></div>
+              <div><div class="test-name">Sofía P., 45 años</div><div class="test-info">Usuaria desde hace 3 meses · Santiago</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Mis 10 minutos antes de dormir ahora son sagrados. La papada bajó y mi piel se ve más firme. No dejo este hábito por nada."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Foto de Patricia T."></div>
+              <div><div class="test-name">Patricia T., 39 años</div><div class="test-info">Usuaria desde hace 3 meses · Curitiba</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-col test-col-2">
+        <div class="test-track">
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Mis 10 minutos antes de dormir ahora son sagrados. La papada bajó y mi piel se ve más firme. No dejo este hábito por nada."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Foto de Patricia T."></div>
+              <div><div class="test-name">Patricia T., 39 años</div><div class="test-info">Usuaria desde hace 3 meses · Curitiba</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Lo que más me gustó fue la personalización. La rutina se adapta a mi progreso y eso me ayudó a mantener constancia sin sentir presión."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de Laura G."></div>
+              <div><div class="test-name">Laura G., 41 años</div><div class="test-info">Usuaria desde hace 5 meses · Ciudad de México</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Mis 10 minutos antes de dormir ahora son sagrados. La papada bajó y mi piel se ve más firme. No dejo este hábito por nada."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Foto de Patricia T."></div>
+              <div><div class="test-name">Patricia T., 39 años</div><div class="test-info">Usuaria desde hace 3 meses · Curitiba</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Lo que más me gustó fue la personalización. La rutina se adapta a mi progreso y eso me ayudó a mantener constancia sin sentir presión."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de Laura G."></div>
+              <div><div class="test-name">Laura G., 41 años</div><div class="test-info">Usuaria desde hace 5 meses · Ciudad de México</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-col test-col-3">
+        <div class="test-track">
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Probé muchas cremas y nada me funcionó así. En un mes vi más definición en mejillas y mandíbula, y mi rostro luce más luminoso."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Foto de Mariana R."></div>
+              <div><div class="test-name">Mariana R., 36 años</div><div class="test-info">Usuaria desde hace 1 mes · Bogotá</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Me encanta porque es simple y realista. Lo hago en casa, sin equipos, y ya noté menos líneas finas alrededor de ojos y boca."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Foto de Sofía P."></div>
+              <div><div class="test-name">Sofía P., 45 años</div><div class="test-info">Usuaria desde hace 3 meses · Santiago</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Probé muchas cremas y nada me funcionó así. En un mes vi más definición en mejillas y mandíbula, y mi rostro luce más luminoso."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Foto de Mariana R."></div>
+              <div><div class="test-name">Mariana R., 36 años</div><div class="test-info">Usuaria desde hace 1 mes · Bogotá</div></div>
+            </div>
+          </div>
+          <div class="test-card">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">"Me encanta porque es simple y realista. Lo hago en casa, sin equipos, y ya noté menos líneas finas alrededor de ojos y boca."</p>
+            <div class="test-author">
+              <div class="test-av"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Foto de Sofía P."></div>
+              <div><div class="test-name">Sofía P., 45 años</div><div class="test-info">Usuaria desde hace 3 meses · Santiago</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="results-metrics">
+      <div class="metric-pill"><div class="num">+67%</div><div class="lbl">Firmeza facial en 30 días</div></div>
+      <div class="metric-pill"><div class="num">+61%</div><div class="lbl">Contorno redefinido</div></div>
+      <div class="metric-pill"><div class="num">+52%</div><div class="lbl">Reducción de líneas finas</div></div>
+      <div class="metric-pill"><div class="num">+44%</div><div class="lbl">Luminosidad de la piel</div></div>
+      <div class="metric-pill"><div class="num">+78%</div><div class="lbl">Autoconfianza reportada</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer" id="oferta">
+  <div class="section-inner">
+    <div class="section-tag">Tu oferta completa</div>
+    <h2 class="section-h2">Todo lo que recibes<br><span class="grad-text">al empezar hoy.</span></h2>
+    <div class="offer-grid">
+      <div class="offer-items">
+        <div class="offer-item">
+          <div class="offer-item-icon">🎯</div>
+          <div><h4>Diagnóstico facial personalizado con IA</h4><p>Tu protocolo exclusivo creado a partir de tus objetivos y tu tipo de piel.</p></div>
+        </div>
+        <div class="offer-item">
+          <div class="offer-item-icon">▶</div>
+          <div><h4>+120 ejercicios faciales guiados en video</h4><p>Sesiones para todas las zonas del rostro con instrucciones precisas en video.</p></div>
+        </div>
+        <div class="offer-item">
+          <div class="offer-item-icon">📊</div>
+          <div><h4>Seguimiento de progreso con IA</h4><p>Análisis semanal y ajuste automático del protocolo según tu evolución.</p></div>
+        </div>
+        <div class="offer-item">
+          <div class="offer-item-icon">🏆</div>
+          <div><h4>Programas temáticos semanales</h4><p>Antiarrugas, lifting natural, contorno mandibular, ojeras — un enfoque por semana.</p></div>
+        </div>
+        <div class="offer-item bonus">
+          <div class="offer-item-icon">🎁</div>
+          <div><div class="bonus-label">Bono exclusivo</div><h4>Desafío de 7 días para principiantes</h4><p>Protocolo inicial para resultados visibles desde la primera semana.</p></div>
+        </div>
+        <div class="offer-item bonus">
+          <div class="offer-item-icon">🎁</div>
+          <div><div class="bonus-label">Bono exclusivo</div><h4>Guía completa anti-edad</h4><p>Masaje, drenaje linfático facial y rutina combinada para potenciar resultados.</p></div>
+        </div>
+      </div>
+
+      <div class="pricing-box">
+        <div class="pricing-grad">
+          <div class="pricing-badge">⚡ Oferta por tiempo limitado</div>
+          <div class="pricing-old-price">De US$ 79.90/mes</div>
+          <div class="pricing-big">
+            <span class="pricing-curr">US$</span>
+            <span class="pricing-val">9</span>
+            <span class="pricing-per">.90<br>/mes</span>
+          </div>
+          <div class="pricing-note">con garantía incondicional de 7 días</div>
+          <a href="https://pay.hotmart.com/R105544429D?checkoutMode=10" class="btn-pricing">Comenzar con garantía de 7 días</a>
+          <div class="pricing-lock">🔒 Tarjeta requerida · Cancela cuando quieras</div>
+        </div>
+        <div class="pricing-white">
+          <div class="included-title">Qué está incluido</div>
+          <div class="inc-item"><div class="inc-check">✓</div>Diagnóstico personalizado con IA</div>
+          <div class="inc-item"><div class="inc-check">✓</div>+120 ejercicios guiados en video</div>
+          <div class="inc-item"><div class="inc-check">✓</div>Seguimiento semanal de progreso</div>
+          <div class="inc-item"><div class="inc-check">✓</div>Programas y desafíos temáticos</div>
+          <div class="inc-item"><div class="inc-check">✓</div>Bono: Desafío de 7 días</div>
+          <div class="inc-item"><div class="inc-check">✓</div>Bono: Guía anti-edad completa</div>
+          <div class="anchor-box">
+            <p><strong>Menos que una sesión estética</strong>Un mes completo de entrenamiento facial diario por US$ 9.90.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTÍA -->
+<section class="guarantee">
+  <div class="guarantee-inner">
+    <div class="guarantee-ring" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L19 5V11.2C19 15.85 15.93 19.86 12 21C8.07 19.86 5 15.85 5 11.2V5L12 2Z" fill="rgba(255,255,255,0.22)"/>
+        <path d="M12 3.8L17.4 6.15V11.15C17.4 14.95 14.96 18.23 12 19.2C9.04 18.23 6.6 14.95 6.6 11.15V6.15L12 3.8Z" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M9 12.15L11.05 14.2L15 10.25" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h2>Riesgo <span class="grad-text">cero.</span><br>Garantía total.</h2>
+    <p>Usa Facelift con garantía de 7 días — o te devolvemos tu dinero. Sin riesgo, sin burocracia.</p>
+    <div class="g-pills">
+      <div class="g-pill">✓ Garantía incondicional de 7 días</div>
+      <div class="g-pill">✓ Tarjeta requerida</div>
+      <div class="g-pill">✓ Cancela en 1 clic</div>
+      <div class="g-pill">✓ Sin permanencia</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-wrap">
+    <div class="faq-header">
+      <div class="section-tag" style="text-align:center;display:block">Preguntas frecuentes</div>
+      <h2 class="section-h2" style="text-align:center">¿Tienes dudas? <span class="grad-text">Respondemos.</span></h2>
+    </div>
+    <details>
+      <summary>¿En cuánto tiempo veo resultados? <div class="faq-plus">+</div></summary>
+      <div class="faq-body">La mayoría de las usuarias reporta mejoras visibles entre 7 y 14 días — principalmente luminosidad y ligereza. La firmeza y la redefinición del contorno aparecen entre 30 y 60 días de uso constante.</div>
+    </details>
+    <details>
+      <summary>¿Funciona para cualquier edad? <div class="faq-plus">+</div></summary>
+      <div class="faq-body">¡Sí! El protocolo es eficaz de los 30 a los 65+ años. Para quienes están en sus 30, el enfoque es la prevención. A partir de los 40 y 50, los resultados de firmeza y redefinición son aún más visibles, porque la musculatura responde con mayor intensidad al estímulo.</div>
+    </details>
+    <details>
+      <summary>¿Necesito equipos o cremas especiales? <div class="faq-plus">+</div></summary>
+      <div class="faq-body">No. Facelift utiliza solo tus manos y la musculatura del rostro. Ningún aparato, ningún producto extra. Solo tu celular y 10 minutos.</div>
+    </details>
+    <details>
+      <summary>¿Cómo funciona la garantía de 7 días? <div class="faq-plus">+</div></summary>
+      <div class="faq-body">Comienzas normalmente y tienes 7 días de garantía incondicional. Si no percibes valor en el método durante ese período, solo solicítalo y te devolvemos el 100% del importe pagado. Sin burocracia.</div>
+    </details>
+    <details>
+      <summary>¿Los resultados son permanentes? <div class="faq-plus">+</div></summary>
+      <div class="faq-body">La ganancia muscular se mantiene mientras sigas entrenando — exactamente como en el gimnasio. Con uso constante, el tono se convierte en la nueva condición base de la musculatura facial, generando resultados duraderos y progresivos.</div>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final-inner">
+    <h2>Tu rostro más firme<br>empieza <span class="grad-text">hoy.</span></h2>
+    <p>+180.000 mujeres ya eligieron el camino natural. Empieza hoy con garantía total de 7 días.</p>
+    <a href="https://pay.hotmart.com/R105544429D?checkoutMode=10" class="final-btn">Comenzar con garantía de 7 días</a>
+    <div class="final-note">Con tarjeta · Sin compromiso · Cancela cuando quieras</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Facelift</div>
+  <div class="footer-links">
+    <a href="#">Privacidad</a>
+    <a href="#">Términos</a>
+    <a href="#">Cancelación</a>
+    <a href="#">Contacto</a>
+  </div>
+</footer>
+
+</body>
+</html>
